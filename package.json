@@ -1,0 +1,22 @@
+{
+  "name": "fastify-telyubiz-cdn",
+  "module": "src/app.ts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "bun --watch src/app.ts",
+    "start": "bun src/app.ts",
+    "build": "bun build src/app.ts --outdir dist --target bun --format cjs --minify"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "@fastify/multipart": "^9.4.0",
+    "fastify": "^5.7.4",
+    "sharp": "^0.34.5"
+  }
+}
